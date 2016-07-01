@@ -1,8 +1,8 @@
 FROM ruby:2.3.1-alpine
 
 ENV BUILD_PACKAGES="build-base" \
-    DEV_PACKAGES="libxml2-dev libxslt-dev sqlite-dev mariadb-dev tzdata nodejs" \
-    GEMS="nokogiri sqlite3 debug_inspector binding_of_caller byebug mysql2 puma rails" \
+    DEV_PACKAGES="libxml2-dev libxslt-dev sqlite-dev postgresql-dev mariadb-dev tzdata nodejs" \
+    GEMS="nokogiri sqlite3 debug_inspector binding_of_caller byebug mysql2 pg puma rails" \
     RUBY_VERSION="2.3.1"
 
 # preinstall native extensions
