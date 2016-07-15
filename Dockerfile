@@ -28,4 +28,4 @@ WORKDIR /app
 
 ONBUILD COPY Gemfile /app/
 ONBUILD COPY Gemfile.lock /app/
-ONBUILD RUN bundle install
+ONBUILD RUN bundle install -j4
