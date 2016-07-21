@@ -2,8 +2,8 @@ FROM ruby:2.3.1
 
 ENV BUILD_PACKAGES="build-essential" \
     DEV_PACKAGES="libxml2-dev libxslt-dev libsqlite3-dev postgresql-server-dev-all libmysqlclient-dev tzdata nodejs" \
-    SYSTEM_LIB_REQUIRED_GEMS="mysql2 pg" \
-    GEMS="sqlite3 debug_inspector binding_of_caller byebug puma rails bcrypt byebug therubyracer rake minitest i18n addressable ast execjs connection_pool orm_adapter ipaddress request_store rspec rspec-support tilt spring timecop turbolinks-source faker warden rack-protection launchy parser autoprefixer-rails uglifier coffee-script better_errors rdoc pry rspec-core rspec-expectations rspec-mocks slim spring-commands-rspec turbolinks letter_opener astrolabe faraday faraday_middleware sdoc factory_girl bullet jbuilder onkcop annotate bitmask_attributes polyamorous gon ransack simple_form coffee-rails responders devise gretel xray-rails" \
+    SYSTEM_LIB_REQUIRED_GEMS="mysql2 pg bcrypt" \
+    GEMS="sqlite3 debug_inspector binding_of_caller byebug puma rails byebug therubyracer rake minitest i18n addressable ast execjs connection_pool orm_adapter ipaddress request_store rspec rspec-support tilt spring timecop turbolinks-source faker warden rack-protection launchy parser autoprefixer-rails uglifier coffee-script better_errors rdoc pry rspec-core rspec-expectations rspec-mocks slim spring-commands-rspec turbolinks letter_opener astrolabe faraday faraday_middleware sdoc factory_girl bullet jbuilder onkcop annotate bitmask_attributes polyamorous gon ransack simple_form coffee-rails responders devise gretel xray-rails" \
     RUBY_VERSION="2.3.1"
 
 # preinstall native extensions
