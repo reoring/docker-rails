@@ -1,4 +1,4 @@
-FROM ruby:2.3.4
+FROM ruby:2.4.1
 
 ENV BUILD_PACKAGES="build-essential" \
     DEV_PACKAGES="libxml2-dev libxslt-dev libsqlite3-dev postgresql-server-dev-all libmysqlclient-dev tzdata nodejs" \
